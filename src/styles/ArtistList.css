@@ -1,0 +1,27 @@
+.artist-container{margin-top: 20px;}
+.list-artist{
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.list-artist:first-child,
+.list-artist:first-child:hover{border-top: 0px solid rgba(255,255,255,.1);}
+.list-artist:hover{
+  cursor: pointer;
+  background-color: rgba(30,215,96,.1);
+  border-top: 1px solid rgba(30,215,96,.3);
+}
+.list-artist img{width: 30px;}
+.list-artist > div{
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.list-artist p{
+  margin-bottom: 0px;
+}
+
+
+    
+    
+    

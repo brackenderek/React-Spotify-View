@@ -1,0 +1,12 @@
+.info-pane > img{border: 2px solid #555;}
+.info-pane p{color: #999;}
+.info-pane .alternate-suggestions{
+  margin-top: 50px;
+}
+.info-pane .alternate-suggestions .list-artist{padding: 10px 0px;}
+.info-pane .alternate-suggestions .list-artist:hover,
+.info-pane .alternate-suggestions .list-artist:hover p{
+  background-color: rgba(30,215,96,.0);
+  color: rgba(30,215,96,.7);
+}
+.info-pane .alternate-suggestions p{color:#f1f1f1;}

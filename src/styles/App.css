@@ -1,0 +1,77 @@
+/* Base Application Styles */
+
+/* Links */
+a,
+a:focus,
+a:hover {color: #fff;}
+
+/* Base structure */
+html{overflow-y: scroll;}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+}
+
+body {color: #f1f1f1;}
+
+/* Masthead */
+.masthead{
+  text-align:center;
+  padding: 15px;
+}
+
+.masthead-brand {
+  margin-top: 0px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.masthead-initial .masthead-brand{margin-top:75px}
+.masthead-brand img{width: 100px;}
+
+/* Mastbody */
+.mastbody{
+  padding: 15px 0px;
+  position: relative;
+}
+
+.spinner{
+  background: url('../images/ajax-loading.gif') no-repeat center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.find-artist{
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.find-artist h1{
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.no-matches{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top:20px;
+}
+
+/* Mastfoot */
+.mastfoot {
+  color: #999;
+  color: rgba(255,255,255,.5);
+  text-align: center;
+  margin-top: 50px;
+}
+
+

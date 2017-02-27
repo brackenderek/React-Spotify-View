@@ -1,0 +1,20 @@
+.center .card img{
+  height: 160px;
+  opacity: .4;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border: 3px solid #555;
+}
+.center .card img:hover{cursor: pointer;}
+.center .card.slick-center img{
+  opacity: 1;
+  transform: scale(1.1);
+}
+.center{
+  margin: 20px auto;
+  width: calc(100% - 50px);
+  height: 180px;
+}
+.center .slick-track{
+  padding: 20px 0px;
+}

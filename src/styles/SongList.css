@@ -1,0 +1,15 @@
+.list-song{
+  color: #999;
+  margin-top: 20px;
+}
+.list-song tr{
+  padding: 10px;
+}
+.list-song tbody tr:hover{background-color: rgba(30,215,96,.1);}
+.list-song tbody tr td.song-title{
+  font-weight: 700;
+  color: #f1f1f1;
+}
+.list-song.table > tbody > tr:hover td {
+    border-top: 1px solid rgba(30,215,96,.3);
+}

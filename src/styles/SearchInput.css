@@ -1,0 +1,17 @@
+.search-input{
+    margin-top: 5px;
+    -webkit-transition: margin-top .4s ease-in;
+    transition: margin-top .4s ease-in;
+}
+.search-input input{
+    border-radius: 100px;
+    border: 0px solid #fff;
+    padding: 7px 15px;
+    color:#333;
+    -webkit-transition: padding .4s ease-in;
+    transition: padding .4s ease-in;
+}
+
+.search-input input:focus {outline: -webkit-focus-ring-color auto 0px;}
+.masthead-initial .search-input input{padding: 10px 25px}
+.masthead-initial .search-input{margin-top: 20px;}

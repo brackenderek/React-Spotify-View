@@ -1,0 +1,35 @@
+
+.deep-info-block .nav-tabs>li.active>a, 
+.deep-info-block .nav-tabs>li.active>a:focus, 
+.deep-info-block .nav-tabs>li.active>a:hover {
+    color: #1DB954;
+    cursor: default;
+    background-color: rgba(0,0,0,0);
+    border: 0px solid #ddd;
+    border-bottom-width: 5px;
+    border-bottom-color: #1DB954;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    color: rgba(30,215,96,.6);
+    background-color: rgba(0,0,0,0);
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(30,215,96,.4);
+}
+.nav-tabs > li > a {
+    border: 0px solid transparent;
+    margin-right: 0px;
+}
+.nav-tabs {border-bottom: 1px solid #1DB954;}
+.album-info{
+    margin-top: 35px;
+}
+.album-info > h4{
+    padding-top: 15px;
+    border-top: 1px solid #999;
+}
+.album-info > p{margin-bottom: 0px;}
+.album-info > span{color: #1DB954;}
+.album-info > span:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
