@@ -18,7 +18,7 @@ $ npm start
 Once the dev server is listening to requests, open a browser and navigate to the specified location (i.e. localhost:8000)
 
 ## Command Line scripts
-The following commands are available in your project:
+The following commands are available:
 ```bash
 # Start for development
 npm start # or
