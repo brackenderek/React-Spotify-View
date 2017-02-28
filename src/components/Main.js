@@ -249,7 +249,7 @@ class AppComponent extends React.Component {
           </Grid>
         </div>
         <div className="mastfoot">
-          <p>Disclaimer: This application is strictly for personal use. The view is built with React and it uses the <a href="https://www.spotify.com/us/">Spotify</a> API to get it's content.</p>
+          <p>Disclaimer: This application is strictly for personal use. The view is built with React and it uses the <a href="https://www.spotify.com/us/">Spotify</a> API to get the content.</p>
         </div>
       </div>
     );
