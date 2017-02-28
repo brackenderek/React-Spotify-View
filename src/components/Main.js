@@ -243,7 +243,7 @@ class AppComponent extends React.Component {
               &&
               <div className="find-artist">
                 <h1>Artist Finder</h1>
-                <p>Use the search bar above to find information about an artist including genres, followers, top ten songs on Spotify, albums, and related artists. You can also play 30 second sound clips from each song listed for the artist.</p>
+                <p>Use the search bar above to find information about an artist including genres, followers, top ten songs on Spotify, albums, and related artists.</p>
               </div>
             }
           </Grid>
