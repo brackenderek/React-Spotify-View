@@ -49,6 +49,7 @@ class AppComponent extends React.Component {
     this.setState({searchVal:e.target.value})
   }
 
+  // executes when user hits enter on search bar
   performSearchBarSearch(){
     var self = this;
     if(self.state.searchVal.length > 0){
@@ -65,6 +66,7 @@ class AppComponent extends React.Component {
     }
   }
 
+  // executes when user selects artist from list of artists
   newArtistSearch(url){
     var self = this;
 
@@ -85,6 +87,7 @@ class AppComponent extends React.Component {
     }
   }
 
+  // gets all the info relating to the artist
   getArtistInfo(url,artistEndPoint){
     var self = this;
     self.doFetch(url).then(function(artistData){
@@ -149,6 +152,7 @@ class AppComponent extends React.Component {
     });
   }
 
+  // fetches an artists albums and a list of related artists
   getBothRelatedAndAlbums(){
     var self = this;
     self.getRelatedArtists().then(function(relData){
@@ -179,14 +183,17 @@ class AppComponent extends React.Component {
     return this.doFetch(url);
   }
 
+  // actual fetch call that transforms results into json and returns it
   doFetch(url){
     return fetch(url).then((resp) => resp.json());
   }
 
+  // update state on tab change
   handleTabChange(key){
     this.setState({tabKey: key});
   }
 
+  // set the current album, while resetting the other correlated props in state object
   setCurrentAlbum(obj){
     this.setState({
       currentAlbum: [obj],
@@ -197,6 +204,7 @@ class AppComponent extends React.Component {
     });
   }
 
+  // setting the correlating props of the current album
   setCurrentTracks(url){
     var self = this;
     self.doFetch(url).then(function(data){

@@ -6,6 +6,8 @@ import Slider from 'react-slick';
 require('styles//DisplayCard.css');
 
 let DisplayCardComponent = function(props){
+  
+  // settings obj configures the slider options
   const settings = {
     className: 'center',
     centerMode: true,
@@ -18,6 +20,7 @@ let DisplayCardComponent = function(props){
       props.setCurrentAlbum(props.cards[currentSlide]);
     }
   };
+
   return (
     <div>
       <Slider {...settings}>
@@ -34,9 +37,5 @@ let DisplayCardComponent = function(props){
 }
 
 DisplayCardComponent.displayName = 'DisplayCardComponent';
-
-// Uncomment properties you need
-// DisplayCardComponent.propTypes = {};
-// DisplayCardComponent.defaultProps = {};
 
 export default DisplayCardComponent;

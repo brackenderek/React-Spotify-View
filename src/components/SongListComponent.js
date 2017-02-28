@@ -6,6 +6,7 @@ import Table from 'react-bootstrap/lib/Table';
 require('styles//SongList.css');
 
 let SongListComponent = function(props){
+  
   return (
     <Table className="list-song" responsive>
       <thead>
@@ -50,21 +51,19 @@ let SongListComponent = function(props){
     </Table>
   );
 
+  // transform milliseconds into a human readable display number such as 1:34
   function millisToMinutesAndSeconds(millis) {
     var minutes = Math.floor(millis / 60000);
     var seconds = ((millis % 60000) / 1000).toFixed(0);
     return (seconds == 60 ? (minutes+1) + ':00' : minutes + ':' + (seconds < 10 ? '0' : '') + seconds);
   }
 
+  // add a leading zero to the front of any number that is single digit
   function pad(n) {
       return (n < 10) ? ('0' + n + '.') : n + '.';
   }
 }
 
 SongListComponent.displayName = 'SongListComponent';
-
-// Uncomment properties you need
-// SongListComponent.propTypes = {};
-// SongListComponent.defaultProps = {};
 
 export default SongListComponent;

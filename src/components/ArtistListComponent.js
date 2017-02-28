@@ -5,6 +5,8 @@ import React from 'react';
 require('styles//ArtistList.css');
 
 let ArtistListComponent = function(props){
+  
+  // map through list of artists and generate a clickable option for each
   let artists = props.list.map(function(item){
     return (
       <div key={item.id} className="list-artist clearfix" onClick={() => props.handleClick(item.href)}>
@@ -15,6 +17,7 @@ let ArtistListComponent = function(props){
       </div>
     );
   });
+  
   return (
     <div className="artist-container">
       {artists}
@@ -23,9 +26,5 @@ let ArtistListComponent = function(props){
 };
 
 ArtistListComponent.displayName = 'ArtistListComponent';
-
-// Uncomment properties you need
-// ArtistListComponent.propTypes = {};
-// ArtistListComponent.defaultProps = {};
 
 export default ArtistListComponent;

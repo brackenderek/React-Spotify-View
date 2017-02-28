@@ -7,6 +7,7 @@ import ArtistList from './ArtistListComponent';
 require('styles//ArtistInfoPane.css');
 
 let ArtistInfoPaneComponent = (props) => (
+  
   <div className="info-pane">
     <Image src={props.stateObj.imageUrl} responsive />
     <h4 className="info-pane-header">{props.stateObj.name}</h4>
@@ -21,12 +22,9 @@ let ArtistInfoPaneComponent = (props) => (
       </div>
     }
   </div>
+
 );
 
 ArtistInfoPaneComponent.displayName = 'ArtistInfoPaneComponent';
-
-// Uncomment properties you need
-// ArtistInfoPaneComponent.propTypes = {};
-// ArtistInfoPaneComponent.defaultProps = {};
 
 export default ArtistInfoPaneComponent;

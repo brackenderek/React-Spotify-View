@@ -14,7 +14,9 @@ import DisplayCard from './DisplayCardComponent';
 require('styles//ArtistInterface.css');
 
 let ArtistInterfaceComponent = function(props){
-  var artistsString = props.stateObj.currentAlbum.length > 0 ? createArtistsString(props.stateObj.currentAlbum[0].artists) : '';
+
+  let artistsString = props.stateObj.currentAlbum.length > 0 ? createArtistsString(props.stateObj.currentAlbum[0].artists) : '';
+  
   return (
     <Row>
       <Col xs={12} md={2}>
@@ -60,10 +62,12 @@ let ArtistInterfaceComponent = function(props){
     </Row>
   );
   
+  // fetches the song tracks of an artist
   function getTracks(url){
     props.getTracks(url);
   }
-
+  
+  // create string from array of objects properties
   function createArtistsString(arr){
     let albumArtists = '';
     for(var i = 0; i < arr.length; i++){
@@ -76,16 +80,13 @@ let ArtistInterfaceComponent = function(props){
     }
     return albumArtists;
   }
-
+  
+  // update state that a new tab has been selected
   function onTabSelect(key){
     props.handleTabChange(key);
   }
 }
 
 ArtistInterfaceComponent.displayName = 'ArtistInterfaceComponent';
-
-// Uncomment properties you need
-// ArtistInterfaceComponent.propTypes = {};
-// ArtistInterfaceComponent.defaultProps = {};
 
 export default ArtistInterfaceComponent;
