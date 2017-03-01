@@ -3,7 +3,11 @@
 This is a single page application (SPA) built using the Facebook React library and the Spotify API. Use the search bar to search for artists and display correlating information, such as top ten songs on Spotify, Album & track listings, as well as related artists. 
 
 ![Image of start screen](https://github.com/brackenderek/React-Spotify-View/blob/master/src/images/spotify1.png)
+
+*Search for artists*
 ![Image of artist search](https://github.com/brackenderek/React-Spotify-View/blob/master/src/images/spotify2.png)
+
+*See information about albums such as track listings*
 ![Image of album track listing](https://github.com/brackenderek/React-Spotify-View/blob/master/src/images/spotify3.png)
 ## Getting Started
 
