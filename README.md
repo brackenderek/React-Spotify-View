@@ -1,7 +1,7 @@
 # Artist Search SPA using React and Spotify API
 
 This is a single page application (SPA) built using the Facebook React library and the Spotify API. Use the search bar to search for artists and display correlating information, such as top ten songs on Spotify, Album & track listings, as well as related artists. 
-
+![Image of Yaktocat](https://github.com/brackenderek/React-Spotify-View/blob/master/src/images/spotify1.png)
 ## Getting Started
 
 To see the app in action, clone this repository to a local directory on your machine, then from a Command Line, cd into the newly created directory.
